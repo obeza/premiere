@@ -20,9 +20,10 @@ class LoadingComponent extends Component {
         this.loading( LoadingEvent.getStatut() );
 
     }
-    // componentDidMount(){
-    //   LoadingEvent.uns
-    // }
+
+    checkLoading(){
+
+    }
 
     loading(etat) {
         console.log('ok etat');

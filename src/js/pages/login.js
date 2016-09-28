@@ -1,13 +1,28 @@
-import React, { PropTypes } from 'react'
+import React, { Component } from 'react';
 
-const LoginComponent = React.createClass({
+import LoginBox from './../components/login-box';
+
+
+class LoginComponent extends Component {
+
+  constructor(){
+    super();
+
+  }
+
+  loginSubmit(login){
+    console.log('ok', login);
+  }
+
+
+
   render () {
     return (
       <div>
-        <h1>Login page</h1>
+        <LoginBox onLoginSubmit={this.loginSubmit}/>
       </div>
     )
   }
-})
+}
 
 export default LoginComponent

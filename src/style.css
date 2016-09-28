@@ -19,3 +19,17 @@
 .active {
   color: red;
 }
+
+.login{
+  width:400px;
+  margin-left: auto;
+  margin-right: auto;
+  background:red;
+  margin-top: 100px;
+}
+.login-panel{
+  padding:10px;
+}
+.login-panel-action{
+  text-align: center;
+}

@@ -1,6 +1,15 @@
-import React, {Component} from 'react';
+import React, {Component} from 'react'
+
+import restAp from './../restApi.js'
 
 class InfosComp extends Component {
+
+  componentDidMount(){
+    restAp.get('bonjour').then( (res)=>{
+      console.log('response ' + res);
+    });
+  }
+
     render () {
         return (
             <div>
